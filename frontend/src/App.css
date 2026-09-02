@@ -1,0 +1,357 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f7f7f7, #fff8e1);
+  color: #222;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 30px 20px 60px;
+}
+
+/* ================= TITLE ================= */
+
+.container > h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #8a6500;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #d4a017;
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-card h3 {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.dashboard-card p {
+  font-size: 26px;
+  font-weight: bold;
+  color: #8a6500;
+}
+
+/* ================= FORM ================= */
+
+.form-card {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-card h2 {
+  color: #333;
+  margin: 20px 0 15px;
+  font-size: 22px;
+}
+
+.form-card h2:first-child {
+  margin-top: 0;
+}
+
+/* ================= INPUTS ================= */
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #d4a017;
+  box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.12);
+}
+
+/* ================= CALCULATOR ================= */
+
+.calculator {
+  margin: 25px 0;
+  padding: 22px;
+  background: #fff9e6;
+  border-radius: 14px;
+  border-left: 5px solid #d4a017;
+}
+
+.calculator h2 {
+  margin-top: 0;
+  color: #8a6500;
+}
+
+.calculator p {
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+/* ================= LOAN PLANS ================= */
+
+.plan-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 15px 0 25px;
+}
+
+.plan-card {
+  padding: 22px;
+  border: 2px solid #e5e5e5;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.plan-card.selected {
+  border-color: #d4a017;
+  background: #fff8dc;
+}
+
+.plan-card h3 {
+  color: #8a6500;
+  margin-bottom: 10px;
+}
+
+.plan-card p {
+  margin: 6px 0;
+  color: #555;
+}
+
+/* ================= MAIN BUTTONS ================= */
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.submit-btn,
+.view-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 12px;
+}
+
+.submit-btn {
+  background: #d4a017;
+  color: white;
+}
+
+.submit-btn:hover {
+  background: #b8860b;
+  transform: translateY(-2px);
+}
+
+.view-btn {
+  background: #333;
+  color: white;
+}
+
+.view-btn:hover {
+  background: #555;
+  transform: translateY(-2px);
+}
+
+/* ================= MESSAGE ================= */
+
+.message {
+  text-align: center;
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f0fff4;
+  color: #167a3d;
+  font-weight: bold;
+}
+
+/* ================= APPLICATIONS ================= */
+
+.applications-card {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.applications-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* ================= SEARCH ================= */
+
+.search-box {
+  margin-bottom: 25px;
+  border: 2px solid #ddd;
+}
+
+.search-box:focus {
+  border-color: #d4a017;
+}
+
+/* ================= APPLICATION CARD ================= */
+
+.application-item {
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  background: #fafafa;
+  transition: 0.3s;
+}
+
+.application-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.application-item h3 {
+  color: #8a6500;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+/* Application details */
+
+.application-item p {
+  display: inline-block;
+  width: 48%;
+  margin: 10px 0;
+  color: #444;
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 11px 22px;
+  min-width: 110px;
+  color: white;
+  border-radius: 8px;
+}
+
+/* Edit - Green */
+
+.edit-btn {
+  background: #28a745;
+}
+
+.edit-btn:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+/* Delete - Red */
+
+.delete-btn {
+  background: #e53935;
+}
+
+.delete-btn:hover {
+  background: #b71c1c;
+  transform: translateY(-2px);
+}
+
+/* ================= NO DATA ================= */
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 12px 40px;
+  }
+
+  .container > h1 {
+    font-size: 26px;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-container {
+    grid-template-columns: 1fr;
+  }
+
+  .application-item p {
+    width: 100%;
+  }
+
+  .form-card,
+  .applications-card {
+    padding: 22px;
+  }
+
+  .action-buttons {
+    gap: 12px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    flex: 1;
+    min-width: auto;
+  }
+}
