@@ -1,57 +1,72 @@
-# 🟡 Gold Loan Application Portal
+# Gold Loan Application Portal
 
-A full-stack web application for collecting gold loan applications and calculating preliminary loan eligibility based on gold weight, purity, and loan scheme.
+## Project Overview
 
-## 🚀 Features
+The Gold Loan Application Portal is a full-stack web application developed to collect and manage gold loan applications.
 
-- Customer details collection
-- Gross and Net Gold Weight input
-- Gold purity selection: 18K, 22K, 24K
+The application allows customers to enter their personal details, gold details, select a loan plan, and submit their application. The system validates the entered information and calculates the maximum eligible loan amount based on gold purity, net weight, and a 75% loan-to-value limit.
+
+The submitted applications are stored in MongoDB and can be viewed, searched, edited, and deleted from the application dashboard.
+
+## Features
+
+- Customer name and mobile number
+- Gold gross weight and net weight
+- Gold purity selection
+- Loan plan selection
 - Pure gold weight calculation
-- Gold value calculation
-- Maximum eligible loan calculation using 75% LTV
-- Bullet Repayment Plan
-- Monthly EMI Plan
-- Input validation
+- Total gold value calculation
+- Maximum loan amount calculation using 75% LTV
+- Form validation
+- Mobile number validation
+- Net weight and gross weight validation
 - Duplicate application check within 7 days
-- MongoDB data storage
-- View all applications
+- Application ID generation
+- Application status tracking
+- Masked mobile number display
+- View all loan applications
 - Search applications
-- Edit applications
+- Edit application details
 - Delete applications
 - Dashboard summary
-- Masked mobile numbers
-- Application ID confirmation
 
-## 🛠️ Tech Stack
+## Technologies Used
 
 ### Frontend
+
 - React
 - Vite
 - CSS
+- JavaScript
 
 ### Backend
+
 - Node.js
 - Express.js
 - Mongoose
-- MongoDB
 
-## 📁 Project Structure
+### Database
+
+- MongoDB Atlas
+
+## Project Structure
 
 ```text
-gold-loan-portal/
+gold-loan-application-portal/
 │
 ├── backend/
-│   ├── server.js
 │   ├── package.json
-│   └── .env
+│   ├── package-lock.json
+│   └── server.js
 │
 ├── frontend/
 │   ├── src/
 │   │   ├── App.jsx
 │   │   ├── App.css
+│   │   ├── index.css
 │   │   └── main.jsx
-│   └── package.json
+│   ├── package.json
+│   └── vite.config.js
 │
 ├── README.md
 └── AI_LOG.md
